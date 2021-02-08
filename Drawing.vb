@@ -21,8 +21,8 @@ Public Class drawing
 
         Dim Pen_mode As Draw_mode
 
-        Dim Pen As New Pen(Brushes.Black, 1)
-        Dim Strokes As New Stack(Of (Brush As Brush, Size As Single, Move As Point())) 'stroke
+        Dim Pen As New Pen(Brushes.Black, pen_size.Value)
+        Dim Strokes As New Stack(Of (Brush As Brush, Size As Single, Move As Point()))
         Dim Movement As New List(Of Point)
 
         With New Timer
